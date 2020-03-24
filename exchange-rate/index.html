@@ -2,9 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>exchange rate</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Exchange Rate Calculator</title>
 </head>
 <body>
+    <img src="img/money.png" alt="" class="money-img">
+    <h1>Exchange Rate Calculator</h1>
+    <p>Choose the currency and the amounts to get the exchange rate</p>
 
+    <div class="container">
+        <div class="currency">
+            <select id="currency-one">
+                <option value="USD">доллар США</option>
+                <option value="EUR">евро</option>
+                <option value="RUR">российский рубль</option>
+                <option value="UAH">гривна</option>
+                <input type="number" id="amount-one" placeholder="0" value="1">
+            </select>
+        </div>
+
+        <div class="swap-rate-container">
+            <button class="btn" id="rate">
+                Swap
+            </button>
+
+        </div>
+
+        <div class="currency">
+            <select id="currency-two">
+                <option value="UAH">гривна</option>
+                <option value="USD">доллар США</option>
+                <option value="EUR">евро</option>
+                <option value="RUR">российский рубль</option>
+                <input type="number" id="amount-two" placeholder="0" >
+            </select>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
