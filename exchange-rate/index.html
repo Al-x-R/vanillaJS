@@ -13,27 +13,32 @@
     <div class="container">
         <div class="currency">
             <select id="currency-one">
-                <option value="USD">доллар США</option>
-                <option value="EUR">евро</option>
-                <option value="RUR">российский рубль</option>
-                <option value="UAH">гривна</option>
-                <input type="number" id="amount-one" placeholder="0" value="1">
+                <option value="UAH" selected>Украинская Гривна</option>
+                <option value="USD">Доллар США</option>
+                <option value="EUR">Евро</option>
+                <option value="RUB">Российский Рубль</option>
+                <option value="GBP">Английский фунт</option>
+
+                <input type="number" id="amount-one" placeholder="0" value="1" />
             </select>
         </div>
 
         <div class="swap-rate-container">
-            <button class="btn" id="rate">
+            <button class="btn" id="swap">
                 Swap
             </button>
+            <div class="rate" id="rate"></div>
 
         </div>
 
         <div class="currency">
             <select id="currency-two">
-                <option value="UAH">гривна</option>
-                <option value="USD">доллар США</option>
-                <option value="EUR">евро</option>
-                <option value="RUR">российский рубль</option>
+                <option value="USD" selected>Доллар США</option>
+                <option value="UAH">Украинская Гривна</option>
+                <option value="EUR">Евро</option>
+                <option value="RUB">Российский Рубль</option>
+                <option value="GBP">Английский фунт</option>
+
                 <input type="number" id="amount-two" placeholder="0" >
             </select>
         </div>
