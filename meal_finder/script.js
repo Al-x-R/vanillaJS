@@ -65,6 +65,7 @@ function getRandomMeal() {
         .then(res => res.json())
         .then(data => {
             const meal = data.meals[0]
+            console.log(data)
 
             addMealToDOM(meal)
         })
